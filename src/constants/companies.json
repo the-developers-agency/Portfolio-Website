@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Tech Alchemy",
+    "image": "/techAlchemy.png"
+  },
+  {
+    "name": "CoinFabrik",
+    "image": "/CoinFabric.png"
+  },
+  {
+    "name": "Innovecs",
+    "image": "/Innovecs.png"
+  },
+  {
+    "name": "Empirica",
+    "image": "Experica.png"
+  },
+  {
+    "name": "10Clouds",
+    "image": "/10Clouds.png"
+  }
+]

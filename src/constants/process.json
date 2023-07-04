@@ -1,0 +1,61 @@
+{
+  "Process": [
+    {
+      "title": "Plan",
+      "description": "We’ll sit down  with you (figuratively, not literally) to understand the details of your project idea and discuss how we can turn your dreams into reality.",
+      "image": "/planImage.png"
+    },
+    {
+      "title": "Design",
+      "description": "We’ll then mock-up your entire user experience from scratch in one of those fancy designer programs, so we can sculpt it into a masterpiece.",
+      "image": "/DesignImage.png"
+    },
+    {
+      "title": "Architect",
+      "description": "While our designers are at work, our engineers will be working on your apps architecture. This is the invisible structure that ensures everything runs smoothly and is 100% secure.",
+      "image": "/ArchitectImage.png"
+    },
+    {
+      "title": "Build",
+      "description": "We'll then write some of the most beautiful code you’ve ever seen. We follow strict guidelines and everything is fully documented - giving you a solid foundation to build on.",
+      "image": "/BuildImage.png"
+    },
+    {
+      "title": "Test",
+      "description": "Meanwhile, we’re creating automated tests that we run to prevent any small changes from breaking the app and causing 'help desk hell' for your team.",
+      "image": "/TestImage.png"
+    },
+    {
+      "title": "Launch",
+      "description": "Finally, we’re ready for deployment (aka launch). Since a good app is more than just a pile of source code on GitHub - much of the user experience comes from a proper deployment process.",
+      "image": "/LaunchImage.png"
+    },
+    {
+      "title": "Upgrade",
+      "description": "Once your product is live, it's rarely complete! The way to dominate your industry is to continually get feedback from your users and improve faster than the competition.",
+      "image": "/UpgradeImage.png"
+    }
+  ],
+  "Companies": [
+    {
+      "name": "Tech Alchemy",
+      "image": "/techAlchemy.png"
+    },
+    {
+      "name": "CoinFabrik",
+      "image": "/CoinFabric.png"
+    },
+    {
+      "name": "Innovecs",
+      "image": "/Innovecs.png"
+    },
+    {
+      "name": "Empirica",
+      "image": "/Experica.png"
+    },
+    {
+      "name": "10Clouds",
+      "image": "/10Cluods.png"
+    }
+  ]
+}
