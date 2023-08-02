@@ -12,6 +12,13 @@ import Blockchain from "/public/BlockChain.png";
 import consult from "/public/SoftwareConsulting.png";
 import vBox from "/public/v_box.png";
 import processData from "../constants/process.json";
+import TestimonialSlider from "../component/slider";
+import Input from "@/component/input";
+import Navbar from "@/component/navbar";
+import Footer from "@/component/footer";
+
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 // import designCard from "/assets/Images/DesignCard.png";
 // import { url } from "inspector";
@@ -20,176 +27,141 @@ import processData from "../constants/process.json";
 export default function Home() {
   return (
     <main className="bg-black">
-      <div className="flex absolute w-full p-5 bg-black flex-row justify-between">
-        <div className="item-center">
-          <Image
-            // className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-            src={logo}
-            alt="Company Logo"
-            width={20}
-            height={10}
-            priority
-          />
-        </div>
-        <div className="flex w-[50%]  bg-black flex-row justify-between">
-          <div className="mt-2">
-            <text className="text-white font-Sen non-italic font-extrabold  text-base leading-5">
-              About Us
-            </text>
-          </div>
-          <div className="mt-2">
-            <text className="text-[#A6A6A6] align-middle font-Sen non-italic font-normal  text-base leading-5">
-              Portfolio
-            </text>
-          </div>
-          <div className="mt-2">
-            <text className="text-[#A6A6A6] align-middle font-Sen non-italic font-normal text-base leading-5">
-              Careers
-            </text>
-          </div>
-          <div className="mt-2">
-            <text className="text-[#A6A6A6] align-middle font-Sen non-italic font-normal text-base leading-5">
-              Blog
-            </text>
-          </div>
-        </div>
-        <div className="flex flex-row w-[15%] justify-between">
-          <div className="bg-gradient-to-t from-[#FDB739]  to-[#BFA855] rounded-[9px] p-[2px]">
-            <div className="flex h-full w-full items-center justify-center bg-black rounded-[8px] py-2 px-5">
-              <text className="text-white align-middle font-Sen non-italic font-extrabold  text-base leading-5">
-                Get started
-              </text>
-            </div>
-          </div>
-          <div className="item-center align-middle mt-[10px] ">
-            <Image
-              // className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-              src={Menu}
-              alt="Company Logo"
-              width={20}
-              height={10}
-              priority
-              className="align-middle"
-            />
-          </div>
-        </div>
-      </div>
-      <div className="flex py-20 content_bg">
-        <div>
-          <div className="align-middle">
-            <h1 className="text-6xl text-center mt-[15%] font-Sen mx-20 font-semibold leading-normal text-white">
-              Cutting Edge Web3 Solutions That{" "}
+      <Navbar />
+
+      <div className="flex content_bg  bg-cover bg-center  container mx-auto">
+        <div className="">
+          <div className="align-middle mt-[120px]">
+            <h1 className="text-[64px] text-center  font-Roboto py-6xl  font-[500] leading-normal text-white">
+              Cutting Edge Web3 Solutions That <br />
               <text className="text-[#DCAF48]">Enhance</text> Humanity
             </h1>
-            <h2 className="text-center font-Sen font-normal text-[#E3E3E3] text-2xl mt-20">
+            <h2 className="text-center font-Sen font-[300] text-[#E3E3E3] text-3xl mt-[92px] py-[10px]">
               Blockchain - AI/ML - IoT - AR/VR
             </h2>
             <div className="flex align-middle justify-center ">
-              <h3 className="text-center text-xl text-white font-Sen bg-gradient-to-b from-[#4A2800CC] via-[#FF9900A3] to-[#959252CC]  font-bold mt-10 py-[10px] px-10 border-2 gap-10 border-[#ffffff] rounded-md">
+              <h3 className="text-center text-[20px] text-white font-Sen font-[600] text-xl mt-[32px] py-[19px] px-[45px] border-2 gap-10 border-[#ffffff] rounded-md">
                 Contact Us
               </h3>
             </div>
           </div>
-          <div className="flex align-middle  justify-center mt-20">
-            <h2 className="text-4xl text-white font-Sen">Trusted by</h2>
-          </div>
-          <div className="flex align-middle items-center justify-center m-28">
-            <div className="flex flex-row align-middle justify-between w-[100%]">
-              <div>
-                <h2 className="font-Sen text-2xl text-white font-bold non-italic">
-                  Emizen Tech
-                </h2>
+
+          {/* Section 2 */}
+
+          <div className="container mx-auto">
+            <div className="flex align-middle  justify-center mt-[124px]">
+              <h2 className="text-[35px] font-[700] text-white font-Sen py-[10px]">
+                Trusted by
+              </h2>
+            </div>
+            <div className="flex align-middle items-center justify-center mt-[50px] py-[32px]">
+              <div className="flex flex-row justify-between w-[80%]  mx-auto">
+                <div>
+                  <h2 className="font-Sen text-[25px] text-white font-[600] non-italic">
+                    Emizen Tech
+                  </h2>
+                </div>
+                <div>
+                  <h2 className="font-Sen text-[25px] text-white font-[600] non-italic">
+                    Intuz
+                  </h2>
+                </div>
+                <div>
+                  <h2 className="font-Sen text-[25px] text-white font-[600] non-italic">
+                    Umbrella IT
+                  </h2>
+                </div>
+                <div>
+                  <h2 className="font-Sen text-[25px] text-white font-[600] non-italic">
+                    e-Flair
+                  </h2>
+                </div>
+                <div>
+                  <h2 className="font-Sen text-[25px] text-white font-[600] non-italic">
+                    Cosmico
+                  </h2>
+                </div>
               </div>
-              <div>
-                <h2 className="font-Sen text-2xl text-white font-bold non-italic">
-                  Intuz
-                </h2>
-              </div>
-              <div>
-                <h2 className="font-Sen text-2xl text-white font-bold non-italic">
-                  Umbrella IT
-                </h2>
-              </div>
-              <div>
-                <h2 className="font-Sen text-2xl text-white font-bold non-italic">
-                  e-Flair
-                </h2>
-              </div>
-              <div>
-                <h2 className="font-Sen text-2xl text-white font-bold non-italic">
-                  Cosmico
-                </h2>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-[60%] items-center py-[32px] pb-[75px]">
+                <h3 className="text-[30px] font-[300] text-center font-Sen text-white ">
+                  We work hand in hand with companies to create long-lasting
+                  solutions that enhance your current organization through
+                  blockchain technology.
+                </h3>
               </div>
             </div>
           </div>
-          <div className="flex justify-center">
-            <div className="w-[80%] items-center my-10">
-              <h3 className="text-3xl text-center font-Sen text-white ">
-                We work hand in hand with companies to create long-lasting
-                solutions that enhance your current organization through
-                blockchain technology.
-              </h3>
-            </div>
-          </div>
-          <div className="flex justify-center mt-20">
-            <div className="flex justify-center bg-gradient-to-b w-[90%] from-[#976D00] to-[#292929] py-1 rounded-lg ">
-              <div className="flex flex-wrap w-[99%] justify-between px-[8%] bg-black p-2  rounded-md">
-                <div>
-                  <h3 className="font-Sen text-white text-4xl font-normal">
-                    300+
-                  </h3>
-                  <h3 className="font-Sen text-xl text-white font-normal mt-5">
-                    Developers and designers
-                  </h3>
-                </div>
-                <div>
-                  <h3 className="font-Sen text-4xl text-white font-normal">
-                    15M+
-                  </h3>
-                  <h3 className="font-Sen text-xl text-white font-normal mt-5">
-                    Lines of Code
-                  </h3>
-                </div>
-                <div>
-                  <h3 className="font-Sen text-4xl text-white font-normal">
-                    300+
-                  </h3>
-                  <h3 className="font-Sen text-xl text-white font-normal mt-5">
-                    Projects Completed
-                  </h3>
+
+          {/* Section 3 */}
+
+          <div className="flex justify-center py-[65px] ">
+            <div className="flex justify-center bg-gradient-to-b w-[90%] from-[#976D00] to-[#292929] p-[4px] rounded-lg ">
+              <div className="   bg-black  w-[100%] ">
+                <div className="flex flex-wrap w-[100%] justify-between rounded-md px-[200px] py-[20px]">
+                  <div>
+                    <h3 className="font-Sen text-white text-[35px] font-normal">
+                      300+
+                    </h3>
+                    <h3 className="font-Sen text-[20px] text-white font-normal mt-[24px]">
+                      Developers and designers
+                    </h3>
+                  </div>
+                  <div>
+                    <h3 className="font-Sen text-white text-[35px] font-normal">
+                      15M+
+                    </h3>
+                    <h3 className="font-Sen text-[20px] text-white font-normal mt-[24px]">
+                      Lines of Code
+                    </h3>
+                  </div>
+                  <div>
+                    <h3 className="font-Sen text-white text-[35px] font-normal">
+                      300+
+                    </h3>
+                    <h3 className="font-Sen text-[20px] text-white font-normal mt-[24px]">
+                      Projects Completed
+                    </h3>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div>
-        <h1 className="text-6xl font-Sen font-bold text-white text-center ">
+
+      <div className="container mx-auto mt-[15px]">
+        <h1 className="text-6xl font-Sen py-[50px] font-[500] font-Roboto text-white text-center ">
           What we do?
         </h1>
-        <h3 className="mt-20  px-32 text-white text-3xl font-Sen text-center">
+        <h3 className=" py-[32px] text-white text-[30px] font-[300] w-[60%] mx-auto font-Sen text-center">
           Enable businesses like yours to build a beautiful, user -friendly Web3
           solutions - no domain experience required. We help turn your ideas
           into a blockchain reality.
         </h3>
       </div>
 
-      <div className="flex flex-row justify-center w-full mt-28">
-        <div className="">
-          <div className="rounded-md bg-gradient-to-b from-[#956B00] to-[#000000] p-1">
-            <div className="pt-20 pb-10 pl-6 w-[400px]  bg-gradient-to-b from-[#232323] to-[#0E0E0E] ">
-              <h1 className="text-2xl font-Sen font-bold text-white">
+      <div className="flex container mx-auto flex-row justify-center w-full mt-[64px] py-[32px]">
+        <div className="card-bg bg-cover h-[fit-content]">
+          <div className="rounded-md  p-1">
+            <div
+              className="pt-20 pb-10 pl-6 w-[400px] 
+            
+              "
+            >
+              <h1 className="text-2xl font-Sen font-semibold text-white">
                 #Development
               </h1>
-              <ul className="text-white  font-Sen mt-8 pl-5 text-xl leading-10 ">
+              <ul className="text-white  font-Sen font-[300] mt-8 pl-5 text-xl leading-10 ">
                 <li>dApps</li>
                 <li>Web & Mobile</li>
                 <li>Smart Contracts</li>
                 <li>Bridges</li>
                 <li>Formal Verifications</li>
               </ul>
-              <div className="flex justify-end mx-10 ">
-                <h1 className="font-bold font-Sen text-transparent align-middle text-lg text-right bg-clip-text bg-gradient-to-b from-[#956B00] to-[#FFDA58">
+              <div className="flex justify-end mx-10 mt-8 ">
+                <h1 className="font-bold font-Sen text-transparent align-middle text-lg text-right bg-clip-text bg-gradient-to-b from-[#956B00] to-[#FFDA58]">
                   Let’s talk
                 </h1>
                 <Image
@@ -202,21 +174,21 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mx-20 mt-96">
-          <div className="rounded-md bg-gradient-to-b from-[#956B00] to-[#000000] p-1">
-            <div className="pt-20 pb-10 pl-6 w-[400px]  bg-gradient-to-b from-[#232323] to-[#0E0E0E] ">
-              <h1 className="text-2xl font-Sen font-bold text-white">
-                #Development
+        <div className="mx-20 mt-96 card-bg bg-cover h-[fit-content]">
+          <div className="rounded-md  p-1">
+            <div className="pt-20 pb-10 pl-6 w-[400px]  ">
+              <h1 className="text-2xl font-Sen font-semibold text-white">
+                #Design
               </h1>
-              <ul className="text-white  font-Sen mt-8 pl-5 text-xl leading-10 ">
+              <ul className="text-white  font-Sen font-[300] mt-8 pl-5 text-xl leading-10 ">
                 <li>dApps</li>
                 <li>Web & Mobile</li>
                 <li>Smart Contracts</li>
                 <li>Bridges</li>
                 <li>Formal Verifications</li>
               </ul>
-              <div className="flex justify-end mx-10 ">
-                <h1 className="font-bold text-transparent font-Sen align-middle text-lg text-right bg-clip-text bg-gradient-to-b from-[#956B00] to-[#FFDA58">
+              <div className="flex justify-end mx-10 mt-8 ">
+                <h1 className="font-bold text-transparent font-Sen align-middle text-lg text-right bg-clip-text bg-gradient-to-b from-[#956B00] to-[#FFDA58]">
                   Let’s talk
                 </h1>
                 <Image
@@ -230,16 +202,19 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mt-20">
-        <h1 className="text-6xl font-Sen font-bold text-white text-center ">
+
+      {/* Speciality Section */}
+
+      <div className=" container mx-auto py-[32px]">
+        <h1 className="text-[62px] font-Roboto font-[500]  text-white text-center py-[51px] ">
           Our Specialties
         </h1>
 
-        <div className="flex align-middle mt-10 w-full justify-center self-center">
+        <div className="flex align-middle mt-[100px] w-full justify-center self-center">
           <div className=" w-full flex justify-center">
-            <div className="grid grid-cols-2 gap-2">
-              <div className=" bg-gradient-to-b w-[350px] from-[#956B00] to-[#000000] p-1 mr-10">
-                <div className=" bg-gradient-to-b from-[#232323] to-[#0E0E0E] ">
+            <div className="grid grid-cols-2 w-[60%] gap-[45px]">
+              <div className=" bg-gradient-to-b  from-[#956B00] to-[#000000] p-[3px] ">
+                <div className=" bg-gradient-to-b from-[#232323] to-[#0E0E0E] py-[20px] ">
                   <div className="items-center justify-center flex ">
                     <Image
                       src={MvpDev}
@@ -257,8 +232,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className=" bg-gradient-to-b  w-[350px] from-[#956B00] to-[#000000] p-1">
-                <div className=" bg-gradient-to-b from-[#232323] to-[#0E0E0E] ">
+              <div className=" bg-gradient-to-b   from-[#956B00] to-[#000000] p-[3px]">
+                <div className=" bg-gradient-to-b from-[#232323] to-[#0E0E0E] py-[20px] ">
                   <div className="items-center justify-center flex ">
                     <Image
                       src={prototype}
@@ -274,8 +249,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className=" bg-gradient-to-b  w-[350px] from-[#956B00] to-[#000000] p-1">
-                <div className=" bg-gradient-to-b from-[#232323] to-[#0E0E0E] ">
+              <div className=" bg-gradient-to-b   from-[#956B00] to-[#000000] p-[3px]">
+                <div className=" bg-gradient-to-b from-[#232323] to-[#0E0E0E] py-[20px] ">
                   <div className="items-center justify-center flex ">
                     <Image
                       src={contract}
@@ -292,8 +267,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className=" bg-gradient-to-b w-[350px] from-[#956B00] to-[#000000] p-1">
-                <div className=" bg-gradient-to-b from-[#232323] to-[#0E0E0E] ">
+              <div className=" bg-gradient-to-b  from-[#956B00] to-[#000000] p-[3px]">
+                <div className=" bg-gradient-to-b from-[#232323] to-[#0E0E0E] py-[20px] ">
                   <div className="items-center justify-center flex ">
                     <Image
                       src={appUpdate}
@@ -309,8 +284,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className=" bg-gradient-to-b w-[350px] from-[#956B00] to-[#000000] p-1">
-                <div className=" bg-gradient-to-b from-[#232323] to-[#0E0E0E] ">
+              <div className=" bg-gradient-to-b  from-[#956B00] to-[#000000] p-[3px]">
+                <div className=" bg-gradient-to-b from-[#232323] to-[#0E0E0E] py-[20px] ">
                   <div className="items-center justify-center flex ">
                     <Image
                       src={Blockchain}
@@ -328,8 +303,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className=" bg-gradient-to-b w-[350px] from-[#956B00] to-[#000000] p-1">
-                <div className=" bg-gradient-to-b from-[#232323] to-[#0E0E0E] ">
+              <div className=" bg-gradient-to-b  from-[#956B00] to-[#000000] p-[3px]">
+                <div className=" bg-gradient-to-b from-[#232323] to-[#0E0E0E] py-[20px] ">
                   <div className="items-center justify-center flex ">
                     <Image
                       src={consult}
@@ -350,19 +325,25 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="py-20">
+
+      {/* Process Section */}
+
+      <div className="container mx-auto py-[32px]">
         <div>
-          <h1 className="text-6xl font-Sen font-bold text-white text-center ">
+          <h1 className="text-[62px] mt-[136px] font-Roboto font-[500] text-white text-center ">
             Our Process
           </h1>
-          <h3 className="mt-20  px-32 text-white text-3xl font-Sen text-center">
+          <h3 className=" w-[70%] mx-auto py-[45px] text-white text-[30px] font-[300] font-Sen text-center">
             We work hand in hand with companies to create long-lasting solutions
             that enhance your current organization through blockchain
             technology.
           </h3>
         </div>
       </div>
-      <div className="content-center flex justify-center py-20 ">
+
+      {/* Process Plan */}
+
+      <div className=" conatiner mx-auto content-center flex justify-center py-[76px] ">
         <div className=" w-[90%] box_shadow rounded-md pt-10 bg-[#0E0E0E]">
           <div className="content-center flex justify-center">
             {/* check the image rendering here */}
@@ -373,39 +354,48 @@ export default function Home() {
               height={10}
               alt="Company Logo"
               style={{
-                width: "80%",
-                height: "50%",
-                objectFit: "cover",
+                width: "100%",
+                height: "280px",
+                objectFit: "contain",
               }}
             />
           </div>
-          <h3 className="mt-20 pt-2  px-32 text-white text-3xl font-Sen text-center">
+          <h3 className="mt-20 w-[70%] mx-auto text-white text-[25px] font-[300] font-Sen text-center">
             Blockchain app development is complex. That’s we‘re obsessive about
-            our process and it shows in the quality of our work. Get your
-            project delivered to scope, on time and within budget- every time.
+            our process and
+            <br />
+            it shows in the quality of our work. Get your project delivered to
+            scope, on time and
+            <br />
+            within budget- every time.
           </h3>
-          <div className="mt-10 mx-28">
+          <div className=" w-[70%] mx-auto">
             {processData.Process.map((item, index) => {
               return (
-                <div className="flex flex-row my-28 justify-between w-[90%]">
+                <div className="flex flex-row my-[200px] gap-[70px] w-[90%]">
                   <div className=" justify-center flex">
                     <Image
                       // className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
                       src={item.image}
-                      width={150}
-                      height={80}
+                      height={190}
+                      width={190}
                       alt={item.title}
                       style={{
                         objectFit: "contain",
+                        height: "190px",
                       }}
                     />
                   </div>
                   <div className="w-[70%] justify-center flex flex-col">
-                    <h3 className="text-white font-Sen my-2">0{index + 1}</h3>
-                    <h1 className="text-4xl text-white font-Sen my-2">
+                    <h3 className="text-white font-Sen text-[25px] my-[10px]">
+                      0{index + 1}
+                    </h3>
+                    <h1 className="text-[40px] font-[300] text-white font-Sen my-2">
                       {item.title}
                     </h1>
-                    <h3 className="text-white text-xl">{item.description}</h3>
+                    <h3 className="text-white mt-[18px] text-[20px] font-Sen font-[300] ">
+                      {item.description}
+                    </h3>
                   </div>
                 </div>
               );
@@ -413,12 +403,15 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="py-20">
-        <h1 className="font-bold  text-3xl text-center align-middle text-transparent bg-clip-text bg-gradient-to-b from-[#CE9503] to-[#BBBBBB">
+
+      {/* Tech Section */}
+
+      <div className="container mx-auto">
+        <h1 className="font-bold  text-3xl text-center align-middle text-transparent bg-clip-text bg-gradient-to-b from-[#CE9503] to-[#BBBBBB] py-[80px]">
           /TECH WE’RE WORKING WITH
         </h1>
         {/* <div></div> */}
-        <div className="flex justify-center flex-wrap mt-20">
+        <div className="flex justify-center flex-wrap mt-[25px] gap-[100px]">
           {processData.Companies.map((item, index) => {
             return (
               <div className="mx-10 align-middle">
@@ -433,32 +426,32 @@ export default function Home() {
                     style={{}}
                   />
                 </div>
-                <h1 className="text-white text-center text-xl font-Sen">
+                <h1 className="text-white text-center text-[20px] font-[300] font-Sen py-[32px]">
                   {item.name}
                 </h1>
               </div>
             );
           })}
         </div>
-        <div>
-          <h1 className="text-center text-[#A9A9A9] font-Sen text-4xl leading-[49px] px-20 py-20">
+        <div className="py-[70px]">
+          <h1 className="text-center text-[#A9A9A9] font-Sen text-4xl font-[300] leading-[49px] px-20 ">
             We are on a mission to build{" "}
-            <text className=" text-transparent bg-clip-text bg-gradient-to-b from-[#CE9503] to-[#C5A655">
+            <text className=" text-transparent bg-clip-text bg-gradient-to-b from-[#CE9503] to-[#C5A655]">
               great products
             </text>{" "}
-            that speed up the adoption of blockchain technology because we
-            believe in its{" "}
-            <text className=" text-transparent bg-clip-text bg-gradient-to-b from-[#CE9503] to-[#C5A655">
+            that speed up <br /> the adoption of blockchain technology because
+            we believe in <br /> its{" "}
+            <text className=" text-transparent bg-clip-text bg-gradient-to-b from-[#CE9503] to-[#C5A655]">
               power
             </text>{" "}
             to bring greater{" "}
-            <text className=" text-transparent bg-clip-text bg-gradient-to-b from-[#CE9503] to-[#C5A655">
+            <text className=" text-transparent bg-clip-text bg-gradient-to-b from-[#CE9503] to-[#C5A655]">
               economic freedom
             </text>{" "}
-            to people around the world.
+            to people <br /> around the world.
           </h1>
           <div className="flex align-middle justify-center ">
-            <h3 className="text-center text-xl text-white font-Sen font-bold mt-10 py-[10px] px-10 border-2 gap-10 border-[#956B00] rounded-md">
+            <h3 className="text-center text-xl font-[300] text-white font-Sen font-bold mt-10 py-[10px] px-10 border-2 gap-10 border-[#956B00] rounded-md">
               Contact Us
             </h3>
           </div>
@@ -469,12 +462,13 @@ export default function Home() {
           <h1 className="text-6xl font-Sen font-bold text-white text-center ">
             Our Leadership Team
           </h1>
-          <h3 className="mt-20  px-32 text-white text-3xl font-Sen text-center">
-            We are an experienced team of blockchain developers & designers who
-            only take on a few hand-selected projects at a time.
+          <h3 className="mt-20  px-32 text-white font-[300] text-3xl font-Sen text-center">
+            We are an experienced team of blockchain developers & designers
+            <br />
+            who only take on a few hand-selected projects at a time.
           </h3>
         </div>
-        <div className="flex flex-row w-full justify-center">
+        <div className="flex gap-[100px] flex-row mt-[90px] w-full justify-center">
           <div>
             <div className="py-10">
               <Image
@@ -493,7 +487,7 @@ export default function Home() {
               <h2 className="text-3xl font-Sen text-white py-5">
                 Crysal Lurre
               </h2>
-              <h1 className="font-bold font-Sen text-transparent align-middle text-lg bg-clip-text bg-gradient-to-b from-[#956B00] to-[#FFDA58">
+              <h1 className="font-bold font-Sen text-transparent align-middle text-lg bg-clip-text bg-gradient-to-b from-[#956B00] to-[#FFDA58]">
                 CEO
               </h1>
             </div>
@@ -514,7 +508,7 @@ export default function Home() {
               <h2 className="text-3xl font-Sen text-white py-5">
                 Tyson Faulkner
               </h2>
-              <h1 className="font-bold font-Sen text-transparent align-middle text-lg bg-clip-text bg-gradient-to-b from-[#956B00] to-[#FFDA58">
+              <h1 className="font-bold font-Sen text-transparent align-middle text-lg bg-clip-text bg-gradient-to-b from-[#956B00] to-[#FFDA58]">
                 President
               </h1>
             </div>
@@ -537,22 +531,88 @@ export default function Home() {
               <h2 className="text-3xl font-Sen text-white py-5">
                 Jesse Anglen
               </h2>
-              <h1 className="font-bold font-Sen text-transparent align-middle text-lg bg-clip-text bg-gradient-to-b from-[#956B00] to-[#FFDA58">
+              <h1 className="font-bold font-Sen text-transparent align-middle text-lg bg-clip-text bg-gradient-to-b from-[#956B00] to-[#FFDA58]">
                 CTO
               </h1>
             </div>
           </div>
         </div>
       </div>
-      <footer>
-        <div className="flex flex-row justify-center">
-          <div>
-            <h1 className="font-bold font-Sen text-transparent align-middle text-lg text-right bg-clip-text bg-gradient-to-t from-[#FFCB12] to-[#F3F3F3">
-              Explore
+
+      {/* Testimonials */}
+
+      <div className="container mx-auto">
+        <h1 className="font-bold  text-3xl text-center align-middle text-transparent bg-clip-text bg-gradient-to-b from-[#CE9503] to-[#BBBBBB] py-[80px]">
+          /TESTIMONIALS
+        </h1>
+
+        <h3 className="text-6xl text-[#fff] text-center py-[62px]">
+          {" "}
+          What our clients say about working with us
+        </h3>
+
+        <div className="w-[60%] mx-auto">
+          <TestimonialSlider />
+        </div>
+      </div>
+
+      {/* Contact Form */}
+
+      <div className="container mx-auto py-[120px] ">
+        <div className="grid grid-cols-2 bg-gradient-to-r  from-[#956B00] to-[#000000] p-[60px] rounded-[30px]">
+          <div className="col-span-1">
+            <h1 className="font-bold w-[100%]  text-3xl text-left align-middle text-transparent bg-clip-text bg-gradient-to-b from-[#FFB800] to-[#F8F8F8] pb-[40px]">
+              /CONTACT US
             </h1>
+            <p className="text-3xl font-Sen w-[70%] font-[700]">
+              Looking For Experienced Blockchain Developers?
+            </p>
+            <p className="text-3xl mt-[44px] fotn-Sen font-[700]">
+              {" "}
+              Let’s Talk
+            </p>
+          </div>
+          <div className="col-span-1 flex flex-col gap-[20px]">
+            <Input label="First Name" required />
+            <Input label="Last Name" required />
+            <Input label="Email" required />
+            <Input label="Phone Number" />
+
+            <div className="flex gap-[10px] flex-col">
+              <p className="font-Sen text-md">
+                Do you have a current or planned project?
+              </p>
+              <div>
+                <div className="flex gap-[10px]">
+                  <input type="radio" id="yes" name="project" value="yes" />
+                  <label className="text-gray-400 font-Sen text-md">Yes</label>
+                </div>
+                <div className="flex gap-[10px]">
+                  <input type="radio" id="yes" name="project" value="yes" />
+                  <label className="text-gray-400 font-Sen text-md">No</label>
+                </div>
+                <div className="flex gap-[10px]">
+                  <input type="radio" id="yes" name="project" value="yes" />
+                  <label className="text-gray-400 font-Sen text-md">
+                    Looking for a partnership
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-[10px] flex-col">
+              <p className="font-Sen text-md">
+                Tell us a bit about your project?
+              </p>
+              <textarea
+                placeholder="Budget? Timeline? Solutions"
+                className="placeholder:text-[#4D4D4D] p-[10px] border-[1px] border-[#565656] bg-transparent rounded-[10px] h-[150px] "
+              ></textarea>
+            </div>
           </div>
         </div>
-      </footer>
+      </div>
+
+      <Footer />
     </main>
   );
 }
