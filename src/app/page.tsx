@@ -1,3 +1,6 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const brands = [
@@ -28,6 +31,7 @@ const brands = [
 ];
 
 const page = () => {
+  const router = useRouter();
   return (
     <div>
       <span
@@ -130,9 +134,14 @@ const page = () => {
                           Call Us Now
                         </a>
                       </button>
-                      <button className="hero_buttonEntry__dMyi5 rounded-full md:w-[181px] w-[160px] h-[48px] text-white hover:text-black100 hero_buttonThree__AEBhT">
+                      <button
+                        onClick={() => {
+                          router.push("/portfolio");
+                        }}
+                        className="hero_buttonEntry__dMyi5 rounded-full md:w-[181px] w-[160px] h-[48px] text-white hover:text-black100 hero_buttonThree__AEBhT"
+                      >
                         <a
-                          href="portfolio"
+                          href="javascript:void(0)"
                           className="md:text-16 text-[14px] font-medium"
                         >
                           Portfolio
@@ -1867,9 +1876,14 @@ const page = () => {
                     Call Us Now
                   </p>
                 </a>
-                <button className="rounded-full p-[24px] h-[48px] buttonTwo items-center w-[max-content] md:flex hidden">
+                <button
+                  onClick={() => {
+                    router.push("/portfolio");
+                  }}
+                  className="rounded-full p-[24px] h-[48px] buttonTwo items-center w-[max-content] md:flex hidden"
+                >
                   <a
-                    href="portfolio"
+                    href="javascript:void(0)"
                     className="text-[16px] font-medium text-white"
                   >
                     Portfolio

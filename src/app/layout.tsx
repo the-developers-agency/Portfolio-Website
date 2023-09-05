@@ -15,7 +15,33 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head></head>
+      <head>
+        <title>The Developers Agency</title>
+        <meta
+          content="The Developers Agency help you iterate your product faster."
+          name="description"
+        />
+        <meta content="The Developers Agency" property="og:title" />
+        <meta
+          content="The Developers Agency help you iterate your product faster."
+          property="og:description"
+        />
+        <meta
+          content="https://thedevelopers.agency/assets/logo.png"
+          property="og:image"
+        />
+        <meta content="The Developers Agency" property="twitter:title" />
+        <meta
+          content="The Developers Agency help you iterate your product faster."
+          property="twitter:description"
+        />
+        <meta
+          content="https://thedevelopers.agency/assets/logo.png"
+          property="twitter:image"
+        />
+        <meta property="og:type" content="website" />
+        <meta content="summary_large_image" name="twitter:card" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
