@@ -758,7 +758,7 @@ const index = () => {
                     TDA
                   </a>
                 </div>
-                <div className="footer_listWidth__WUFhY text-white100 text-[14px] font-medium">
+                {/* <div className="footer_listWidth__WUFhY text-white100 text-[14px] font-medium">
                   <a
                     className="mb-[14px] text-grey500 hover:text-white100"
                     href="/terms-and-conditions"
@@ -773,7 +773,7 @@ const index = () => {
                   >
                     Privacy Policy
                   </a>
-                </div>
+                </div> */}
               </div>
             </footer>
           </div>

@@ -27,7 +27,7 @@ export default function RootLayout({
           property="og:description"
         />
         <meta
-          content="https://thedevelopers.agency/assets/logo.png"
+          content="https://thedevelopers.agency/images/logo.png"
           property="og:image"
         />
         <meta content="The Developers Agency" property="twitter:title" />
@@ -36,7 +36,7 @@ export default function RootLayout({
           property="twitter:description"
         />
         <meta
-          content="https://thedevelopers.agency/assets/logo.png"
+          content="https://thedevelopers.agency/images/logo.png"
           property="twitter:image"
         />
         <meta property="og:type" content="website" />
