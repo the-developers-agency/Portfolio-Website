@@ -244,7 +244,7 @@ const page = () => {
                 <span className="text-grey250">
                   Awesome clients we've worked with.
                 </span>
-                <br className="hidden md:block" />
+                <br className="block" />
                 From early stage startups to publicly traded companies.
               </p>
               <div className="clients-fold_ImageDiv__6haNx">
