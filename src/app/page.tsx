@@ -254,8 +254,8 @@ const page = () => {
                       href={item?.url}
                       target="_blank"
                       className={
-                        "p-[5px] " +
-                        ([0, 3]?.includes(index) ? "bg-white p-[5px]" : "")
+                        "p-[5px] cursor-pointer flex " +
+                        ([0, 3]?.includes(index) ? "bg-white " : "")
                       }
                     >
                       <img
@@ -274,7 +274,7 @@ const page = () => {
               </div>
             </div>
             <section
-              className="features_featureSection__wwuU9 md:pt-[320px] md:mt-[-164px] pt-[256px] mt-[-128px] after:bg-feature-section-gradient after:opacity-0"
+              className="features_featureSection__wwuU9 md:pt-[220px]  pt-[156px]  after:bg-feature-section-gradient after:opacity-0"
               //   style={{
               //     --feature-color": "53,42,79",
               //     "--feature-color-dark": "194,97,254",
