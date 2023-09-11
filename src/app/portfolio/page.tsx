@@ -29,7 +29,8 @@ const index = () => {
             </filter>
           </svg>
         </span>
-        <div id="__next">
+        <br />
+        <div id="__next bg-black">
           <div className="flex flex-col w-full">
             <div className="fixed top-0 left-0 right-0 navbarBackground z-[9998] block block">
               <div className="mx-auto max-w-[1200px]">
@@ -61,7 +62,7 @@ const index = () => {
                         Call Us Now
                       </a>
                     </a>
-                    <div className="ml-[-24px] md:hidden block">
+                    <div className="ml-[-24px] hidden ">
                       <svg
                         width={50}
                         height={31}
@@ -307,6 +308,7 @@ const index = () => {
                     <span style={{ borderBottom: "0.05em solid" }}>
                       <strong>Monitoring</strong>
                     </span>
+                    <br />
                   </p>
                   <p id="08f9816e-fb4f-4144-8228-c63cce6ac9b8" className="">
                     Gaurav wanted monitoring to be set up for all the API calls,
@@ -455,6 +457,7 @@ const index = () => {
                       <span style={{ borderBottom: "0.05em solid" }}>
                         Initial Discovery Phase
                       </span>
+                      <br />
                       After exploring, we concluded we have two options. Either
                       to build a standalone web app from scratch. Or use React
                       Native for Web to configure a monorepo that would run
@@ -471,6 +474,7 @@ const index = () => {
                       <span style={{ borderBottom: "0.05em solid" }}>
                         Scoping out the project
                       </span>
+                      <br />
                       There were several fundamental differences between Mobile
                       and Web. For example
                       <ol
@@ -518,6 +522,7 @@ const index = () => {
                       <span style={{ borderBottom: "0.05em solid" }}>
                         Execution
                       </span>
+                      <br />
                       <ol
                         id="35a08926-bed0-491e-9b32-cec8211f4364"
                         className="numbered-list"
@@ -576,6 +581,7 @@ const index = () => {
                       <span style={{ borderBottom: "0.05em solid" }}>
                         Testing and fixing flows
                       </span>
+                      <br />
                       Once we reached a pretty close web app that resembled
                       their mobile app visually, we started testing each and
                       every functionality and doing the corresponding fixes. Now

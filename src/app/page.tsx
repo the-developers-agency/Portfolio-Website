@@ -59,7 +59,7 @@ const page = () => {
           </filter>
         </svg>
       </span>
-      <div id="__next">
+      <div id="__next bg-black">
         <div className="flex flex-col w-full">
           <div className="fixed top-0 left-0 right-0 navbarBackground z-[9998] block block">
             <div className="mx-auto max-w-[1200px]">
@@ -91,7 +91,7 @@ const page = () => {
                       Call Us Now
                     </a>
                   </a>
-                  <div className="ml-[-24px] md:hidden block">
+                  <div className="ml-[-24px] hidden ">
                     <svg
                       width={50}
                       height={31}
@@ -120,7 +120,7 @@ const page = () => {
                     <div className="bg-separator h-[1px] w-[102px] md:block hidden" />
                     <p className="hero_subHeaderEntry___6pn_ text-left lg:text-[22px] md:text-[16px] text-[18px] text-grey250 mb-[48px] text-center md:text-left leading-[25px] md:leading-[1.3] tracking-[-0.8px] md:tracking-[-0.5px] font-normal md:mt-[34px]">
                       360° fintech. Tailor-made for your startup.
-                      <br className="hidden md:block" />
+                      <br className="block" />
                       LOS, LMS, Lending Solutions, Underwriting Software,
                       Journey Builders. Built from scratch.
                     </p>
