@@ -59,7 +59,7 @@ const page = () => {
           </filter>
         </svg>
       </span>
-      <div id="__next bg-black">
+      <div id=" bg-black">
         <div className="flex flex-col w-full">
           <div className="fixed top-0 left-0 right-0 navbarBackground z-[9998] block block">
             <div className="mx-auto max-w-[1200px]">

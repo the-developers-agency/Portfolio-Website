@@ -3,7 +3,7 @@ import React from "react";
 const index = () => {
   return (
     <>
-      <div>
+      <div >
         <span
           style={{
             border: "0",
@@ -80,7 +80,7 @@ const index = () => {
               </div>
             </div>
 
-            <div>
+            <div className="bg-black">
               <meta
                 httpEquiv="Content-Type"
                 content="text/html; charset=utf-8"
