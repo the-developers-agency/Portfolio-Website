@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -45,8 +46,18 @@ export default function RootLayout({
         <meta content="summary_large_image" name="twitter:card" />
         <link href="/images/logo.png" rel="shortcut icon" type="image/x-icon" />
         <link href="/images/logo.png" rel="apple-touch-icon" />
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-11422671486"
+        ></Script>
+        <Script>
+          {`  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-11422671486');`}
+        </Script>
       </head>
-      <body className={inter.className} >{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
