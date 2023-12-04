@@ -23,7 +23,7 @@ const brands = [
     width: 60,
   },
   {
-    img: "https://www.veefin.com/assets/images/logo_new.png",
+    img: "https://www.veefin.com/assets/imgs/logo.png",
     url: "https://www.veefin.com/",
     height: 35,
     width: 118,
