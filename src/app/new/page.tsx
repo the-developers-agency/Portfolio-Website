@@ -1,26 +1,27 @@
+import Image from "next/image";
 import React from "react";
 
 const brands = [
   {
-    img: "https://getfinstack.in/assets/images/finstack-logo.png",
+    img: require("Finstack logo.png"),
     url: "https://www.getfinstack.in/",
     height: 35,
     width: 118,
   },
   {
-    img: "https://anandrathi.com/Content/image/logo1.png",
+    img: require("anandrathi.ong"),
     url: "https://www.anandrathi.com/",
     height: 35,
     width: 118,
   },
   {
-    img: "https://media.licdn.com/dms/image/C560BAQHh3yg6QpYr_g/company-logo_200_200/0/1649605002366?e=1701907200&v=beta&t=wKyn4eks-hV7dDDiMR6uznQXTIJBZo-D9a-M4FKCL20",
+    img: require("veefin.png"),
     url: "https://www.linkedin.com/company/getfreebirdapp/",
     height: 35,
     width: 60,
   },
   {
-    img: "https://www.veefin.com/assets/images/logo_new.png",
+    img: require("veefin.png"),
     url: "https://www.veefin.com/",
     height: 35,
     width: 118,
@@ -249,9 +250,10 @@ const page = () => {
                         ([0, 3]?.includes(index) ? "bg-white p-[5px]" : "")
                       }
                     >
-                      <img
+                      <Image
                         alt="Security Logo"
                         // srcSet="https://www.cubehq.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsecurity-logo.6a8c58a4.png&w=256&q=75"
+                        // src={item?.img}
                         src={item?.img}
                         width={item?.width}
                         height={item?.height}
@@ -1905,7 +1907,6 @@ const page = () => {
                 </div>
               </div>
             </footer>
-            
           </main>
         </div>
       </div>

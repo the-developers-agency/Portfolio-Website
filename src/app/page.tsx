@@ -1,29 +1,57 @@
 "use client";
 
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
 
+// const brands = [
+//   {
+//     img: "https://getfinstack.in/assets/images/finstack-logo.png",
+//     url: "https://www.getfinstack.in/",
+//     height: 35,
+//     width: 118,
+//   },
+//   {
+//     img: "https://anandrathi.com/Content/image/logo1.png",
+//     url: "https://www.anandrathi.com/",
+//     height: 35,
+//     width: 118,
+//   },
+//   {
+//     img: "https://media.licdn.com/dms/image/C560BAQHh3yg6QpYr_g/company-logo_200_200/0/1649605002366?e=1701907200&v=beta&t=wKyn4eks-hV7dDDiMR6uznQXTIJBZo-D9a-M4FKCL20",
+//     url: "https://www.linkedin.com/company/getfreebirdapp/",
+//     height: 35,
+//     width: 60,
+//   },
+//   {
+//     img: "https://www.veefin.com/assets/imgs/logo.png",
+//     url: "https://www.veefin.com/",
+//     height: 35,
+//     width: 118,
+//   },
+// ];
+
 const brands = [
   {
-    img: "https://getfinstack.in/assets/images/finstack-logo.png",
+    img: "/Finstack logo.png",
     url: "https://www.getfinstack.in/",
     height: 35,
     width: 118,
   },
   {
-    img: "https://anandrathi.com/Content/image/logo1.png",
+    img: "/anandrathi.png",
     url: "https://www.anandrathi.com/",
     height: 35,
     width: 118,
   },
   {
-    img: "https://media.licdn.com/dms/image/C560BAQHh3yg6QpYr_g/company-logo_200_200/0/1649605002366?e=1701907200&v=beta&t=wKyn4eks-hV7dDDiMR6uznQXTIJBZo-D9a-M4FKCL20",
+    img: "/freebird.png",
     url: "https://www.linkedin.com/company/getfreebirdapp/",
     height: 35,
     width: 60,
   },
   {
-    img: "https://www.veefin.com/assets/imgs/logo.png",
+    img: "/veefin.png",
     url: "https://www.veefin.com/",
     height: 35,
     width: 118,
@@ -255,10 +283,10 @@ const page = () => {
                       target="_blank"
                       className={
                         "p-[5px] cursor-pointer flex " +
-                        ([0, 3]?.includes(index) ? "bg-white " : "")
+                        ([0, 2, 3]?.includes(index) ? "bg-white " : "")
                       }
                     >
-                      <img
+                      <Image
                         alt="Security Logo"
                         // srcSet="https://www.cubehq.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsecurity-logo.6a8c58a4.png&w=256&q=75"
                         src={item?.img}
