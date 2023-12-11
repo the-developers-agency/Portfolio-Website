@@ -3,25 +3,25 @@ import React from "react";
 
 const brands = [
   {
-    img: require("Finstack logo.png"),
+    img: "/Finstack logo.png",
     url: "https://www.getfinstack.in/",
     height: 35,
     width: 118,
   },
   {
-    img: require("anandrathi.ong"),
+    img: "/anandrathi.png",
     url: "https://www.anandrathi.com/",
     height: 35,
     width: 118,
   },
   {
-    img: require("veefin.png"),
+    img: "/freebird.png",
     url: "https://www.linkedin.com/company/getfreebirdapp/",
     height: 35,
     width: 60,
   },
   {
-    img: require("veefin.png"),
+    img: "/veefin.png",
     url: "https://www.veefin.com/",
     height: 35,
     width: 118,
