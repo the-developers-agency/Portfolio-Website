@@ -33,7 +33,7 @@ import React from "react";
 
 const brands = [
   {
-    img: "/Finstack logo.png",
+    img: "/finstack.png",
     url: "https://www.getfinstack.in/",
     height: 35,
     width: 118,
