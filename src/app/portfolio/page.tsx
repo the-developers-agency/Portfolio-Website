@@ -324,54 +324,10 @@ const index = () => {
                     <strong>Technologies involved:</strong> Express, AWS Lambda,
                     AWS DynamoDB, Docker, OpenTSDB, Grafana, NGINX
                   </p>
-                  <hr id="83e23381-9fe9-4d50-b984-730e24930807" />
-                  <h2 id="2790a1d8-4bde-41fc-9aa9-4ae018e39eb2" className="">
-                    3. Veefin
-                  </h2>
-                  <p id="b9a0c041-3fba-464d-8f35-b8e26f5072fd" className="">
-                    Website:{" "}
-                    <a href="https://www.notion.so/TDA-Tech-Portfolio-658f007e60a541988de83a1bbccadff8?pvs=21">
-                      www.veefin.com
-                    </a>
-                  </p>
-                  <p id="6c4d9053-a633-4f2a-b40a-f3cbacebac5a" className="">
-                    Global Leaders In Digital Supply Chain Finance.
-                  </p>
-                  <h3 id="15a947c7-c7d0-417c-a3ab-9db81b39c555" className="">
-                    What did they need?
-                  </h3>
-                  <p id="106dc879-10a1-4b54-b6b3-94dfe080c584" className="">
-                    They wanted us to build two financial products. One was
-                    calculation problem, another was classifying problem.
-                    Confidential, so we can’t really talk about it.
-                  </p>
-                  <h3 id="84be98e9-f03d-44fe-958c-427685bb6198" className="">
-                    Delivery
-                  </h3>
-                  <p id="12c8ab96-30a7-49cc-b5fa-f084d82afea0" className="">
-                    The work involves processing input files to generate a
-                    analytical report. This involved performing some validation
-                    checks on the data, feeding it into a GLM Model to calculate
-                    key parameters and finally plotting it all in a graph. We
-                    are building a React client where users upload the files.
-                    The backend server is being built on Flask, we use NumPy to
-                    do the data transformations. We are containerising these
-                    micro-services which would later be deployed onto their ECS.{" "}
-                  </p>
-                  <p id="2bc60cb1-a893-433d-85bd-12fea6213fc6" className="">
-                    <strong>NOTE:</strong> We can maybe spill some details about
-                    it over call.{" "}
-                  </p>
-                  <p id="72b7a157-e064-4dc4-b282-e6d2a85e6376" className="">
-                    <strong>Languages used: </strong> Python, React
-                  </p>
-                  <p id="71882045-4756-4ad8-8113-726746741488" className="">
-                    <strong>Technologies involved:</strong> AWS, NumPy
-                  </p>
                   <hr id="a2795671-8577-4644-ba90-bf889e372569" />
                   <h2 id="0b033acc-9054-4891-8818-15c0449f1bd2" className="">
                     <strong>
-                      4. Cypherock - World's first hardware wallet without a
+                      3. Cypherock - World's first hardware wallet without a
                       seed phrase.
                     </strong>
                   </h2>
@@ -418,7 +374,7 @@ const index = () => {
                   </p>
                   <hr id="e54c8e95-2a2f-4347-98e4-9540c8f13aea" />
                   <h2 id="cac949ba-90ec-41e7-84a4-d76c3dccc063" className="">
-                    5. Freebird - A debt management app for both lenders and
+                    4. Freebird - A debt management app for both lenders and
                     also for the borrowers
                   </h2>
                   <p id="e14a9716-ce96-4bc8-a760-74e28852a039" className="">
@@ -600,7 +556,7 @@ const index = () => {
                   </p>
                   <hr id="550e38b6-e982-47b0-861f-d7e8e4f2ce3f" />
                   <h2 id="b882e887-f557-4cd7-a197-b0111b2c785b" className="">
-                    6. A Stealth Company
+                    5. A Stealth Company
                   </h2>
                   <p id="c521e48b-2ce4-4b6d-846f-9f6764c11c6c" className="">
                     This company is a ghost. They cannot be found online. We
@@ -639,7 +595,7 @@ const index = () => {
                   </p>
                   <hr id="ad28df6d-380b-4c89-96d3-b2a4a478a47c" />
                   <h2 id="b9aa54d9-27c4-4bcb-99e9-5f1eafe143aa" className="">
-                    7. Handson
+                    6. Handson
                   </h2>
                   <p id="c31065f7-01db-4903-9316-b031d93963fb" className="">
                     <strong>Website:</strong>{" "}

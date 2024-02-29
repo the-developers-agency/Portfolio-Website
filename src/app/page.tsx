@@ -50,12 +50,6 @@ const brands = [
     height: 35,
     width: 60,
   },
-  {
-    img: "/veefin.png",
-    url: "https://www.veefin.com/",
-    height: 35,
-    width: 118,
-  },
 ];
 
 const page = () => {
